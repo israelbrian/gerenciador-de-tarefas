@@ -16,13 +16,12 @@
 // export default App
 import Addtask from "./components/AddTask";
 import Tasks from "./components/Tasks";
-import "./App.css"
 
 function App() {
  
   return (
     <div>
-      <h1 className="title">Gerenciador de Tarefas</h1>
+      <h1 className="text-red-500">Gerenciador de Tarefas</h1>
       <Addtask />
       <Tasks />
     </div>
