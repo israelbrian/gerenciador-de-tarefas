@@ -14,7 +14,7 @@
 // }
 
 // export default App
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import Addtask from "./components/AddTask";
 import Tasks from "./components/Tasks";
 import {v4} from "uuid";
@@ -40,6 +40,10 @@ function App() {
     isCompleted: false
   },
 ]);
+
+useEffect(() => {
+    console.log("tanks foi alterado")
+}, [tasks])
 
 function onTaskClick(taskId) {
   const newTasks = tasks.map(task => {
